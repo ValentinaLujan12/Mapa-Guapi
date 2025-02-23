@@ -19,9 +19,9 @@ library(dplyr)
 
 ## Introducción  
 
-La biorremediación es un proceso que utiliza microorganismos y otras técnicas biológicas para restaurar suelos afectados por contaminantes, como el glifosato. En el siguiente video se muestra paso a paso cómo se llevará a cabo este proceso en Guapi, Cauca.
+Guapi es un municipio ubicado en el departamento del Cauca, Colombia. En esta región se busca desarrollar un proyecto de biorremediación para suelos afectados por el glifosato. Este proyecto busca restaurar la fertilidad del suelo mediante el uso de técnicas biológicas y ecológicas, promoviendo el crecimiento sostenible de cultivos y la recuperación del ecosistema.
 
-## Introducción  
+La biorremediación es un proceso que utiliza microorganismos y otras técnicas biológicas para restaurar suelos afectados por contaminantes, como el glifosato. En el siguiente video se muestra paso a paso cómo se llevará a cabo este proceso en Guapi, Cauca.
 
 La biorremediación es un proceso que utiliza microorganismos y técnicas biológicas para restaurar suelos afectados por contaminantes.
 
@@ -35,12 +35,9 @@ La biorremediación es un proceso que utiliza microorganismos y técnicas bioló
 </div>
 
 
-
-Guapi es un municipio ubicado en el departamento del Cauca, Colombia. En esta región se busca desarrollar un proyecto de biorremediación para suelos afectados por el glifosato. Este proyecto busca restaurar la fertilidad del suelo mediante el uso de técnicas biológicas y ecológicas, promoviendo el crecimiento sostenible de cultivos y la recuperación del ecosistema.
+## Zonas elegidas para el proyecto
 
 A continuación, se presentan las zonas de Guapi que han sido consideradas aptas para la realización del proyecto debido a su ubicación y lo afectadas que se encuentran por la aspersión de glifosato.
-
-## Zonas elegidas para el proyecto
 
 ### Quiroga
 
