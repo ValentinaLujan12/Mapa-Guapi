@@ -1,0 +1,128 @@
+---
+title: "Localización del proyecto GuapiVerde en Guapi, Cauca"
+author: "Grupo 9"
+date: "`r Sys.Date()`"
+format:
+  html:
+    toc: true
+    toc-title: "Contenido"
+    toc-location: left
+    number-sections: true
+    code-fold: true
+---
+
+```{r setup, include=FALSE}
+library(sf)
+library(leaflet)
+library(dplyr)
+```
+
+Guapi es un municipio ubicado en el departamento del Cauca, Colombia. En esta región se busca desarrollar un proyecto de biorremediación para suelos afectados por el glifosato. Este proyecto busca restaurar la fertilidad del suelo mediante el uso de técnicas biológicas y ecológicas, promoviendo el crecimiento sostenible de cultivos y la recuperación del ecosistema.
+
+A continuación, se presentan los lugares de Guapi que han sido considerados aptos para la realización del proyecto debido a su ubicación y lo afectadas que se encuentran por la aspersión de glifosato.
+
+## Veredas
+
+### Quiroga
+
+Quiroga es una vereda caracterizada por su biodiversidad y cercanía a cuerpos de agua que favorecen la pesca y la agricultura. La zona cuenta con una población que se dedica principalmente al cultivo de arroz, plátano y maíz, así como a la cría de aves de corral.
+
+El acceso a Quiroga se da a través de caminos rurales, y su geografía presenta pequeñas elevaciones que favorecen el drenaje natural de las lluvias.
+
+En esta zona, el proyecto de biorremediación se enfoca en la regeneración de suelos utilizados para cultivos tradicionales, evitando la erosión y mejorando la calidad del agua subterránea.
+
+```{r}
+leaflet() %>%
+  addTiles() %>%
+  addCircleMarkers(lng = -77.90, lat = 2.65, label = "Quiroga", color = "blue", fillColor = "lightblue", fillOpacity = 0.7, radius = 6) %>%
+  setView(lng = -77.90, lat = 2.65, zoom = 14)
+```
+
+### Limones
+
+Limones es una vereda de gran importancia agrícola donde se cultivan productos como plátano, yuca y cacao, fundamentales para la economía local.
+
+La comunidad de Limones se caracteriza por sus prácticas de agricultura sostenible y su conocimiento en el manejo de suelos. En la zona también se encuentran pequeñas explotaciones ganaderas y apícolas, lo que ha permitido diversificar las fuentes de ingreso de las familias.
+
+El proyecto en esta vereda se centra en la rehabilitación de terrenos afectados por la aspersión de glifosato, promoviendo técnicas de biofertilización y reforestación.
+
+```{r}
+leaflet() %>%
+  addTiles() %>%
+  addCircleMarkers(lng = -77.92, lat = 2.60, label = "Limones", color = "blue", fillColor = "lightblue", fillOpacity = 0.7, radius = 6) %>%
+  setView(lng = -77.92, lat = 2.60, zoom = 14)
+```
+
+### Juanico
+
+Juanico es una vereda con una fuerte identidad cultural. Sus habitantes tienen una tradición en la música del Pacífico, con marimbas y cantos tradicionales que forman parte de las festividades locales. Además, la comunidad de Juanico se destaca por sus conocimientos en la pesca artesanal y la navegación en los ríos cercanos.
+
+La actividad económica principal es la siembra de productos autóctonos como el chontaduro y el borojó, así como el trabajo en artesanías a base de materiales naturales.
+
+En este sector, la biorremediación se enfoca en mitigar los efectos del glifosato en las fuentes hídricas y en la reintroducción de microorganismos benéficos en el suelo.
+
+```{r}
+leaflet() %>%
+  addTiles() %>%
+  addCircleMarkers(lng = -77.88, lat = 2.62, label = "Juanico", color = "blue", fillColor = "lightblue", fillOpacity = 0.7, radius = 6) %>%
+  setView(lng = -77.88, lat = 2.62, zoom = 14)
+```
+
+### La Pampa
+
+La Pampa es una vereda con extensas zonas de humedales, hogar de una rica fauna y flora característica del ecosistema del litoral pacífico. La región es conocida por sus recursos hídricos, con numerosos arroyos y lagunas que proporcionan agua a la comunidad.
+
+Sus habitantes combinan la agricultura con la pesca y la recolección de frutos silvestres. Debido a la gran presencia de vegetación, se han identificado diversas especies de aves y anfibios, lo que ha motivado proyectos de conservación ecológica.
+
+Aquí, el proyecto de biorremediación se enfoca en la conservación de suelos y en la reducción de la contaminación química mediante cultivos regenerativos y barreras vegetales.
+
+```{r}
+leaflet() %>%
+  addTiles() %>%
+  addCircleMarkers(lng = -77.87, lat = 2.64, label = "La Pampa", color = "blue", fillColor = "lightblue", fillOpacity = 0.7, radius = 6) %>%
+  setView(lng = -77.87, lat = 2.64, zoom = 14)
+```
+
+### Chamon
+
+Chamon destaca por sus comunidades organizadas y su fuerte conexión con el río Guapi, fuente de sustento para los habitantes de la zona. La pesca es una actividad esencial para la economía local, complementada con la producción de coco y caña de azúcar.
+
+Sus pobladores han desarrollado técnicas de conservación del suelo y del agua, implementando sistemas de drenaje natural.
+
+En esta vereda, la biorremediación busca restaurar la calidad del suelo para la producción sostenible de alimentos y la reducción de contaminantes en el agua.
+
+```{r}
+leaflet() %>%
+  addTiles() %>%
+  addCircleMarkers(lng = -77.89, lat = 2.61, label = "Chamon", color = "blue", fillColor = "lightblue", fillOpacity = 0.7, radius = 6) %>%
+  setView(lng = -77.89, lat = 2.61, zoom = 14)
+```
+
+## Mapa General
+
+Estas veredas han sido seleccionadas para la implementación del proyecto de biorremediación debido a su importancia ambiental y agrícola. La intervención busca restaurar la fertilidad de los suelos y proteger las fuentes hídricas esenciales para la comunidad.
+
+```{r}
+# Crear el mapa con todas las veredas
+veredas <- data.frame(
+  nombre = c("Quiroga", "Limones", "Juanico", "La Pampa", "Chamon"),
+  lat = c(2.65, 2.60, 2.62, 2.64, 2.61),
+  lon = c(-77.90, -77.92, -77.88, -77.87, -77.89)
+)
+
+veredas_sf <- st_as_sf(veredas, coords = c("lon", "lat"), crs = 4326)
+
+leaflet(veredas_sf) %>%
+  addTiles() %>%
+  addCircleMarkers(
+    ~st_coordinates(geometry)[,1],
+    ~st_coordinates(geometry)[,2],
+    label = ~nombre,
+    color = "blue",
+    fill = TRUE,
+    fillColor = "lightblue",
+    fillOpacity = 0.7,
+    radius = 6
+  ) %>%
+  setView(lng = -77.90, lat = 2.63, zoom = 12)
+```
