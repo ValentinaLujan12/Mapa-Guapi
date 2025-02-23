@@ -23,7 +23,7 @@ La biorremediación es un proceso que utiliza microorganismos y otras técnicas 
 
 :::
 <video width="640" height="360" controls>
-  <source src="/Mapa_Guapi/video_biorremediacion.mp4" type="video/mp4">
+  <source src="https://github.com/ValentinaLujan12/Mapa-Guapi/releases/download/v1.o/video_biorremediacion.mp4" type="video/mp4">
   Tu navegador no soporta el tag de video.
 </video>
 ::: 
