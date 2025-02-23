@@ -8,6 +8,7 @@ format:
     toc-location: left
     number-sections: true
     code-fold: true
+    self-contained: false
 ---
 
 ```{r setup, include=FALSE}
@@ -16,15 +17,24 @@ library(leaflet)
 library(dplyr)
 ```
 
+La biorremediación es un proceso que utiliza microorganismos y otras técnicas biológicas para restaurar suelos afectados por contaminantes, como el glifosato. En el siguiente video se muestra paso a paso cómo se llevará a cabo este proceso en Guapi, Cauca.
+
+:::
+<video width="640" height="360" controls>
+  <source src="video_biorremediacion.mp4" type="video/mp4">
+  Tu navegador no soporta el tag de video.
+</video>
+:::
+
 Guapi es un municipio ubicado en el departamento del Cauca, Colombia. En esta región se busca desarrollar un proyecto de biorremediación para suelos afectados por el glifosato. Este proyecto busca restaurar la fertilidad del suelo mediante el uso de técnicas biológicas y ecológicas, promoviendo el crecimiento sostenible de cultivos y la recuperación del ecosistema.
 
-A continuación, se presentan los lugares de Guapi que han sido considerados aptos para la realización del proyecto debido a su ubicación y lo afectadas que se encuentran por la aspersión de glifosato.
+A continuación, se presentan las zonas de Guapi que han sido consideradas aptas para la realización del proyecto debido a su ubicación y lo afectadas que se encuentran por la aspersión de glifosato.
 
-## Veredas
+## Zonas elegidas para el proyecto
 
 ### Quiroga
 
-Quiroga es una vereda caracterizada por su biodiversidad y cercanía a cuerpos de agua que favorecen la pesca y la agricultura. La zona cuenta con una población que se dedica principalmente al cultivo de arroz, plátano y maíz, así como a la cría de aves de corral.
+Quiroga es una zona caracterizada por su biodiversidad y cercanía a cuerpos de agua que favorecen la pesca y la agricultura. La zona cuenta con una población que se dedica principalmente al cultivo de arroz, plátano y maíz, así como a la cría de aves de corral.
 
 El acceso a Quiroga se da a través de caminos rurales, y su geografía presenta pequeñas elevaciones que favorecen el drenaje natural de las lluvias.
 
@@ -39,11 +49,11 @@ leaflet() %>%
 
 ### Limones
 
-Limones es una vereda de gran importancia agrícola donde se cultivan productos como plátano, yuca y cacao, fundamentales para la economía local.
+Limones tiene gran importancia agrícola, aquí se cultivan productos como plátano, yuca y cacao, fundamentales para la economía local.
 
 La comunidad de Limones se caracteriza por sus prácticas de agricultura sostenible y su conocimiento en el manejo de suelos. En la zona también se encuentran pequeñas explotaciones ganaderas y apícolas, lo que ha permitido diversificar las fuentes de ingreso de las familias.
 
-El proyecto en esta vereda se centra en la rehabilitación de terrenos afectados por la aspersión de glifosato, promoviendo técnicas de biofertilización y reforestación.
+El proyecto en esta zona se centra en la rehabilitación de terrenos afectados por la aspersión de glifosato, promoviendo técnicas de biofertilización y reforestación.
 
 ```{r, echo=FALSE}
 leaflet() %>%
@@ -54,7 +64,7 @@ leaflet() %>%
 
 ### Juanico
 
-Juanico es una vereda con una fuerte identidad cultural. Sus habitantes tienen una tradición en la música del Pacífico, con marimbas y cantos tradicionales que forman parte de las festividades locales. Además, la comunidad de Juanico se destaca por sus conocimientos en la pesca artesanal y la navegación en los ríos cercanos.
+Juanico tiene una fuerte identidad cultural. Sus habitantes tienen una tradición en la música del Pacífico, con marimbas y cantos tradicionales que forman parte de las festividades locales. Además, la comunidad de Juanico se destaca por sus conocimientos en la pesca artesanal y la navegación en los ríos cercanos.
 
 La actividad económica principal es la siembra de productos autóctonos como el chontaduro y el borojó, así como el trabajo en artesanías a base de materiales naturales.
 
@@ -69,7 +79,7 @@ leaflet() %>%
 
 ### La Pampa
 
-La Pampa es una vereda con extensas zonas de humedales, hogar de una rica fauna y flora característica del ecosistema del litoral pacífico. La región es conocida por sus recursos hídricos, con numerosos arroyos y lagunas que proporcionan agua a la comunidad.
+La Pampa tiene extensas zonas de humedales, hogar de una rica fauna y flora característica del ecosistema del litoral pacífico. La región es conocida por sus recursos hídricos, con numerosos arroyos y lagunas que proporcionan agua a la comunidad.
 
 Sus habitantes combinan la agricultura con la pesca y la recolección de frutos silvestres. Debido a la gran presencia de vegetación, se han identificado diversas especies de aves y anfibios, lo que ha motivado proyectos de conservación ecológica.
 
@@ -88,7 +98,7 @@ Chamon destaca por sus comunidades organizadas y su fuerte conexión con el río
 
 Sus pobladores han desarrollado técnicas de conservación del suelo y del agua, implementando sistemas de drenaje natural.
 
-En esta vereda, la biorremediación busca restaurar la calidad del suelo para la producción sostenible de alimentos y la reducción de contaminantes en el agua.
+En esta zona, la biorremediación busca restaurar la calidad del suelo para la producción sostenible de alimentos y la reducción de contaminantes en el agua.
 
 ```{r, echo=FALSE}
 leaflet() %>%
@@ -99,7 +109,7 @@ leaflet() %>%
 
 ## Mapa General
 
-Estas veredas han sido seleccionadas para la implementación del proyecto de biorremediación debido a su importancia ambiental y agrícola. La intervención busca restaurar la fertilidad de los suelos y proteger las fuentes hídricas esenciales para la comunidad.
+Estas zonas han sido seleccionadas para la implementación del proyecto de biorremediación debido a su importancia ambiental y agrícola. La intervención busca restaurar la fertilidad de los suelos y proteger las fuentes hídricas esenciales para la comunidad.
 
 ```{r, echo=FALSE}
 # Crear el mapa con todas las veredas
