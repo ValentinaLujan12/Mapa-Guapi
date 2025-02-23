@@ -1,0 +1,12 @@
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const btn = document.getElementById("load-video");
+  btn.addEventListener("click", function() {
+    const container = document.getElementById("video-container");
+    container.innerHTML = '<video width="100%" height="auto" controls preload="none" loading="lazy">' +
+      '<source src="video_biorremediacion.mp4" type="video/mp4">' +
+      'Tu navegador no soporta el tag de video.' +
+      '</video>';
+  });
+});
+</script>
