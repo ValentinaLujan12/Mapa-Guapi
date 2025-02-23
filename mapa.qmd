@@ -1,5 +1,5 @@
 ---
-title: "Localización del proyecto GuapiVerde en Guapi, Cauca"
+title: "GuapiVerde"
 author: "Grupo 3"
 format:
   html:
@@ -23,7 +23,7 @@ La biorremediación es un proceso que utiliza microorganismos y otras técnicas 
 
 :::
 <video width="640" height="360" controls>
-  <source src="video_biorremediacion.mp4" type="video/mp4">
+  <source src="/Mapa_Guapi/video_biorremediacion.mp4" type="video/mp4">
   Tu navegador no soporta el tag de video.
 </video>
 ::: 
